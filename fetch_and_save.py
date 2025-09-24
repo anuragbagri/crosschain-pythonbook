@@ -9,7 +9,7 @@ def save_to_csv(protocol, metric):
     df = fetch_data(protocol, metric)
     file_path = f"{OUTPUT_DIR}/{protocol}_{metric}.csv"
     df.to_csv(file_path, index=False)
-    print(f"✅ Saved {protocol} - {metric} → {file_path}")
+    print(f" Saved {protocol} - {metric} → {file_path}")
 
 def run_all():
     for protocol in QUERY_IDS:
